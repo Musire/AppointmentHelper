@@ -1,7 +1,7 @@
 import { BrowserRouter, useRoutes } from 'react-router-dom'
 import routes from '~react-pages'
 import { Suspense } from 'react'
-import { ToastProvider, ThemeProvider } from './context'
+import { ToastProvider, ThemeProvider, AuthProvider } from './context'
 import { nestLayouts } from './util/routes'
 
 const AutoRoutes = () => {
@@ -20,7 +20,9 @@ const App = () => {
     <BrowserRouter>
       <ThemeProvider >
         <ToastProvider>
-          <AutoRoutes />
+          <AuthProvider>
+            <AutoRoutes />
+          </AuthProvider>
         </ToastProvider>
       </ThemeProvider >
     </BrowserRouter>

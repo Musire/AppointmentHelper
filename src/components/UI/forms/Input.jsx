@@ -9,7 +9,7 @@ const FormField = ({ label, name, ...inputProps }) => {
   return (
     <div className="">
       <label className="flex flex-col w-full space-y-1">
-        <span className="w-full capitalize text-emphasis text-lg ">{label}</span>
+        <span className="w-full capitalize text-main text-lg ">{label}</span>
         <input
           {...register(name)}
           className={`w-full bg-transparent border border-adjust rounded-lg  focus:outline-none text-base normal-space text-else ${
