@@ -2,7 +2,7 @@ import { Page } from "@/components";
 
 const HomePage = () => {
     return ( 
-        <Page className="bg-dark">homepage</Page>
+        <Page className="bg-dark p-4">homepage</Page>
      );
 }
  
