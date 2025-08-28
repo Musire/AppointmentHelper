@@ -1,7 +1,9 @@
 import { Form, Input } from "@/components";
+import { useNavigate } from "react-router-dom";
 import z from "zod";
 
 const LoginPage = () => {
+    const navigate = useNavigate()
     const initial = {
             username: '',
             password: ''
@@ -13,6 +15,7 @@ const LoginPage = () => {
 
     const handleSubmit = (data) => {
         console.log(data)
+        navigate('/')
     }
     return ( 
         <div className=" w-full h-full p-4">
