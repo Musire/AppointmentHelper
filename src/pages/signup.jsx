@@ -8,10 +8,10 @@ const SignupPage = () => {
     const VITE_TENANT_ID = import.meta.env.VITE_TENANT_ID
 
     const initial = {
-        username: '',
-        password: '',
-        password2: '',
-        email: ''
+        username: 'test',
+        password: 'test',
+        password2: 'test',
+        email: 'test@test.com'
     }
     const signupSchema = z
         .object({
@@ -26,7 +26,7 @@ const SignupPage = () => {
     });
 
     const handleSubmit = async (data) => {
-        const formData = {...data, domain: 'http://192.168.56.1:5173'}
+        const formData = {...data, domain: 'http://192.168.1.69:5173'}
         console.log(formData)
         try {
             const response = await axios.post(
