@@ -48,7 +48,6 @@ export const AuthProvider = ({ children }) => {
                 setToken(token);
                 setUser(decoded);
             }
-            addSuccess('successfully logged in')
         } catch (error) {
             console.error('Failed to decode token:', error);
             sessionStorage.removeItem('accessToken');
