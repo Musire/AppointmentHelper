@@ -33,7 +33,7 @@ const LoginPage = () => {
 
             if (response?.data?.accessToken) {
                 login(response.data.accessToken)
-                navigate('/')
+                navigate('/home')
             };
         } catch (error) {
             console.error("Error creating resource:", error.response?.data || error.message);
