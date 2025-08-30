@@ -7,8 +7,9 @@ const MainLayout = () => {
 
     const { user } = useAuth()
     const location = useLocation()
-    console.log(location.pathname)
-    if (hasAccess(location.pathname, user)) {
+    const canUse = hasAccess(location.pathname, user)
+
+    if (canUse) {
         return (
             <main className="w-screen h-[100dvh] flex-col flex">
                 <nav className="w-full h-20 centered bg-mid">navbar</nav>

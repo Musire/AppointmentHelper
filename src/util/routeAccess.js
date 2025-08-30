@@ -10,8 +10,8 @@ export const routeAccessRules = [
         path: "/profile", 
         roles: [
             "admin", 
-            "manager", 
-            "user"
+            "mod", 
+            "enduser"
         ] 
     },
 ]
