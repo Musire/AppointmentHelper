@@ -83,6 +83,12 @@
   --animate-progress: fill 1800ms ease-in-out forwards;
   --animate-slideIn: slideLeft 300ms ease-in-out forwards;
   --animate-slideOut: slideRight 300ms ease-in-out forwards;
+  --animate-ripple: ripple 1s ease-out forwards;
+
+  @keyframes ripple {
+    from { transform: scale(1); opacity: 1; }
+    to { transform: scale(2); opacity: 0; }
+  }
 
   @keyframes slideLeft {
     from {

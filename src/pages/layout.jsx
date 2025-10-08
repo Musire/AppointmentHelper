@@ -12,11 +12,11 @@ const MainLayout = () => {
     if (canUse) {
         return (
             <main className="w-screen h-[100dvh] flex-col flex">
-                <nav className="w-full h-20 centered bg-mid">navbar</nav>
+                <nav className="w-full h-20 centered surface-1 text-main">navbar</nav>
                 <div className="grow">
                     <Outlet />
                 </div>
-                <footer className="w-full h-20 centered bg-mid">footer</footer>
+                <footer className="w-full h-20 centered surface-1 text-main">footer</footer>
             </main>
         )
     }
